@@ -1,0 +1,277 @@
+/* --- Universal Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* styles.css */
+
+/* --- Base Styles --- */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* --- Typography --- */
+
+h1 {
+  font-size: 2.5em; /* Larger for emphasis */
+  text-align: center;
+  margin-bottom: 1.5em;
+  color: #0056b3; /* Dark blue */
+}
+
+h2 {
+  font-size: 1.8em; /* Slightly larger */
+  margin-top: 2em; /* More top margin for sections */
+  margin-bottom: 1em;
+  color: #0056b3;
+  border-bottom: 3px solid #007bff; /* More prominent border */
+  padding-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.4em; /* Slightly larger */
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  color: #0056b3;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 1.2em; /* Slightly more spacing */
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #004494; /* Darker blue on hover */
+}
+
+/* --- Navigation --- */
+
+header nav {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+header nav a {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  margin: 0 0.5em;
+  background-color: #e0f2f7; /* Very light blue background */
+  color: #0056b3;
+  border-radius: 5px;
+  border: 1px solid #b3e5fc; /* Light blue border */
+}
+
+header nav a:hover {
+  background-color: #b3e5fc;
+  text-decoration: none;
+}
+
+/* --- Lists --- */
+
+ul, ol {
+  margin-left: 25px; /* Slightly more indent */
+  margin-bottom: 1.2em;
+  list-style-type: square; /* Explicitly set list style */
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  margin-bottom: 0.6em;
+}
+
+/* --- Sections --- */
+
+main section {
+  margin-bottom: 2.5em; /* More spacing between sections */
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+main section h2 {
+  border-bottom-color: #64b5f6; /* Slightly different blue for section headers */
+}
+
+/* --- Resume Specific Styles --- */
+
+header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.job {
+  margin-bottom: 1.8em;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.job h3 {
+  color: #007bff;
+}
+
+.job .company {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 0.5em;
+}
+
+/* --- Cover Letter Specific Styles --- */
+
+address {
+  margin-bottom: 1.5em;
+  font-style: normal; /* Prevent default italic */
+  line-height: 1.4;
+}
+
+address p, address a {
+  margin-bottom: 0.3em;
+}
+
+article {
+  line-height: 1.7;
+}
+
+article h2 {
+  margin-top: 1.8em;
+}
+
+article p strong {
+  font-weight: bolder; /* More emphasis */
+  color: #0056b3;
+}
+
+article p em {
+  font-style: italic;
+  color: #555;
+}
+
+article p mark {
+  background-color: #fff8e1; /* Light yellow highlight */
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+/* --- Career Goals Specific Styles (applied to goals-style.css) --- */
+/* These will be in a separate file */
+
+/* --- Form Styles --- */
+
+form label {
+  display: block;
+  margin-top: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding and border are inside the element's width/height */
+  font-size: 1em;
+}
+
+form input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* --- Table Styles --- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-color: #f9f9f9;
+  font-size: 0.95em;
+  border-radius: 6px;
+  overflow: hidden; /* For rounded corners on background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+caption {
+  text-align: left;
+  font-style: italic;
+  color: #777;
+  margin-bottom: 0.75em;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #e0f2f7;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+tfoot td {
+  text-align: center;
+  font-style: italic;
+  background-color: #e0f2f7;
+}
+
+/* --- Footer --- */
+
+footer {
+  text-align: center;
+  margin-top: 2.5em;
+  padding: 1.5em 0;
+  border-top: 2px solid #eee;
+  color: #777;
+  font-size: 0.9em;
+}
+
+/* --- Specific ID Style --- */
+#current-date {
+  text-align: center;
+  margin-top: 1em;
+  font-style: italic;
+  color: #555;
+}

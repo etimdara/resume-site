@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Tech Career Goals</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Moved these styles to styles.css:
+      body { font-family: sans-serif; margin: 20px; }
+      h1 { text-align: center; }
+      .goal-section { margin-bottom: 20px; border: 1px solid #ccc; padding: 10px; }
+      ul { list-style-type: square; }
+      form label { display: block; margin-top: 10px; }
+      form input, form textarea { width: 100%; padding: 8px; margin-bottom: 10px; }
+  -->
+</head>
+
+<body>
+  <header>
+    <h1>My Tech Career Goals!</h1>
+    <nav>
+      <a href="resume.html">Resume</a>
+      <a href="coverletter.html">Cover Letter</a>
+      <a href="careergoals.html">Career Goals</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="goal-section">
+      <h2>Goal 1: Getting My Degree</h2>
+      <p>
+        My main goal is to finish my Bachelor of Science in Information Technology at WGU.
+        It's going to give me a <strong>strong</strong> foundation!
+      </p>
+      <img src="images/wgu-logo.png" alt="WGU Logo" width="200" />
+      <p>I'm working <em>hard</em> to achieve this!</p>
+    </section>
+
+    <section class="goal-section">
+      <h2>Goal 2: Learning Key Skills</h2>
+      <p>I want to learn important tech skills so I can do lots of things. These include:</p>
+      <ul>
+        <li>
+          <strong>Scripting &amp; Programming:</strong> Writing code to make things work.
+          <audio src="audio/coding-sound.mp3" controls>Can't play audio?</audio>
+        </li>
+        <li><strong>Infrastructure as Code:</strong> Using code to set up computers.</li>
+        <li><strong>Cybersecurity:</strong> Protecting computers and data.</li>
+        <li><strong>Networking:</strong> How computers connect and talk.</li>
+      </ul>
+      <p>I want to be able to work in different tech jobs.</p>
+    </section>
+
+    <section class="goal-section">
+      <h2>Goal 3: Connecting With You</h2>
+      <p>If you want to reach out, please use the form below!</p>
+      <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="first_name" required />
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="last_name" required />
+
+        <label for="company">Company Name:</label>
+        <input type="text" id="company" name="company_name" />
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="user_name" required />
+
+        <label for="phone">Your Phone:</label>
+        <input type="tel" id="phone" name="user_phone" />
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="user_email" required />
+
+        <p>Best Time to Call:</p>
+        <input type="radio" id="am" name="calltime" value="AM" />
+        <label for="am">AM</label><br />
+        <input type="radio" id="pm" name="calltime" value="PM" />
+        <label for="pm">PM</label><br />
+        <input type="radio" id="anytime" name="calltime" value="Anytime" />
+        <label for="anytime">Anytime</label><br /><br />
+
+        <label for="contact_method">Best Contact Method:</label>
+        <select id="contact_method" name="best_contact">
+          <option value="phone">Phone</option>
+          <option value="email">Email</option>
+          <option value="text">Text</option>
+        </select>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="user_message" rows="4" cols="50"></textarea>
+
+        <input type="submit" value="Send" />
+      </form>
+    </section>
+
+    <section class="goal-section">
+      <h2>My Career Aspirations (Video)</h2>
+      <video controls width="320" height="240" src="video/my-video.MOV">
+        Your browser does not support the video element.
+      </video>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Daramfon Etim</p>
+  </footer>
+</body>
+
+</html>
+
